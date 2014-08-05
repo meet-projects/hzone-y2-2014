@@ -1,0 +1,11 @@
+.right {
+	width: 20%;
+	float: right;
+	border: 5px solid;
+	text-align: center;
+}
+
+.letf {
+	width: 80%;
+	float: left;
+}
