@@ -13,7 +13,7 @@
 
   </head>
   <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top" style='background-color:#5E45FF; border-width:0px;'>
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -23,7 +23,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a style="font-weight:bold; font-size: 20pt;" class="navbar-brand" href="#page-top">H-Zone</a>
+                <a style="font-weight:bold; font-size: 20pt; color:white;" class="navbar-brand" href="#page-top">H-Zone</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -33,19 +33,18 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="./index.html">Home</a>
+                        <a href="./index.html" style="color:white">Home</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="./About.html">About</a>
+                        <a href="./About.html" style="color:white">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="./contactus.html">Contact</a>                   
+                        <a href="./contactus.html" style="color:white">Contact</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="./GiveHelp.html">Give Help</a>
+                        <a href="./GiveHelp.html" style="color:white">Give Help</a>
                     </li>
 
-                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -54,35 +53,48 @@
     </nav>
 
     <!--<div id="map-canvas"/>-->
-<div class="row" style="margin-top: 100pt;">
+<div class="row" style="margin-top:80px">
+<div class="col-md-offset-2 col-md-8">
+<h1 style="font-weight: bold;"><span style="font-size:40pt;">HZone</span> helps anyone who's been affected by war. If you need any sort of help, HZone will show you the nearest place to get the help YOU need.</h1>
+</div>
+</div>
+<div class="row" style="margin-top: 10px;">
 <div class="col-md-1 col-md-offset-2">
 
-    <label for="zipCodeLabel" style="font-size:36pt; ">Zone</label>
+    <label for="zipCodeLabel" style="font-size:36pt">Address</label>
 </div>
-<div class="col-md-5">
-	<label for="zipCodeLabel" style="font-size:15pt; color: gray; padding-top:20px; padding-left:15px; ">(A zone is an area, like Jerusalem, or your ZIP Code.)</label>
-</div>
+
 </div>
 
 <div class="row">
 <div class="col-md-6 col-md-offset-3" >
-    <input class="form-control" style="height: 50px; font-size: 18pt;" id="zipCodeInput" placeholder="Eg 06515">
+    <input class="form-control" style="height: 50px; font-size: 18pt;" id="zipCodeInput" placeholder="Eg 121 Judwin Ave ">
 </div>
 </div>  
 
-<div class="row" style="margin-top:15pt;">
+<div class="row" style="margin-top:3pt;">
 <div class="col-md-3 col-md-offset-2" >
         <label for="chooseServiceLabel" style="font-size:36pt; ">Service</label>
 </div>
 </div>
 
-<div class="row" style="margin-top:15pt;">
-<div class="col-md-6 col-md-offset-3" >
-            <input class="form-control" style="height: 50px; font-size: 18pt;" id="zipCodeInput" placeholder="Eg Food">
+<div class="row" style="margin-top:5pt;">
+<div class="col-md-2 col-md-offset-3" >
+            <input type="checkbox" name="vehicle" value="Food"> Food</input>
+</div>
+<div class="col-md-2">
+            <input type="checkbox" name="vehicle" value="Aid"> Aid</input>
+</div>
+<div class="col-md-2" >
+            <input type="checkbox" name="vehicle" value="Donations"> Donations</input>
+</div>
+<div class="col-md-2" >
+            <input type="checkbox" name="vehicle" value="Some other category"> Catwhatever</input>
 </div>
 </div>
 
-<div class="row" style="padding-top:100px">
+
+<div class="row" style="padding-top:40px">
   <button type="button" onclick="moveToNextPage()" class="col-md-2 col-md-offset-5 btn btn-default" style="height:65px; font-weight; bold; font-size: 20pt;">Go!</button>
 </div>
 </body>
